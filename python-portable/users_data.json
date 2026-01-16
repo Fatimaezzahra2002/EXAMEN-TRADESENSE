@@ -1,0 +1,215 @@
+{
+  "users": {
+    "1": {
+      "id": 1,
+      "email": "newtest@example.com",
+      "name": "New Test User",
+      "role": "user",
+      "password": "password123",
+      "created_at": "2026-01-14T16:18:44",
+      "updated_at": "2026-01-14T16:18:44"
+    },
+    "2": {
+      "id": 2,
+      "email": "fatibendraou@gmail.com",
+      "name": "Fatima Zohra",
+      "role": "user",
+      "password": "mypassword123",
+      "created_at": "2026-01-14T16:24:43",
+      "updated_at": "2026-01-14T16:24:43"
+    },
+    "3": {
+      "id": 3,
+      "email": "mycustom@email.com",
+      "name": "Custom User",
+      "role": "user",
+      "password": "mysecretpassword",
+      "created_at": "2026-01-14T16:27:23",
+      "updated_at": "2026-01-14T16:27:23"
+    },
+    "4": {
+      "id": 4,
+      "email": "anothertest@domain.com",
+      "name": "Another Test",
+      "role": "user",
+      "password": "anotherpass123",
+      "created_at": "2026-01-14T16:29:54",
+      "updated_at": "2026-01-14T16:29:54"
+    },
+    "5": {
+      "id": 5,
+      "email": "finaltest@email.com",
+      "name": "Test User Final",
+      "role": "user",
+      "password": "realpassword123",
+      "created_at": "2026-01-14T16:36:55",
+      "updated_at": "2026-01-14T16:36:55"
+    },
+    "6": {
+      "id": 6,
+      "email": "registration@test.com",
+      "name": "Registration Test",
+      "role": "user",
+      "password": "testpassword123",
+      "created_at": "2026-01-14T16:51:35",
+      "updated_at": "2026-01-14T16:51:35"
+    },
+    "7": {
+      "id": 7,
+      "email": "testreg@test.com",
+      "name": "Test Registration",
+      "role": "user",
+      "password": "testpassword123",
+      "created_at": "2026-01-14T17:01:23",
+      "updated_at": "2026-01-14T17:01:23"
+    },
+    "8": {
+      "id": 8,
+      "email": "direct@test.com",
+      "name": "Direct Test",
+      "role": "user",
+      "password": "directpass123",
+      "created_at": "2026-01-14T17:04:23",
+      "updated_at": "2026-01-14T17:04:23"
+    },
+    "9": {
+      "id": 9,
+      "email": "finaltestuser@example.com",
+      "name": "Final Test User",
+      "role": "user",
+      "password": "finalpassword123",
+      "created_at": "2026-01-14T17:07:08",
+      "updated_at": "2026-01-14T17:07:08"
+    }
+  },
+  "challenges": {
+    "1": [
+      {
+        "id": 11,
+        "user_id": 1,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2026-01-14T16:18:44",
+        "updated_at": "2026-01-14T16:18:44"
+      }
+    ],
+    "2": [
+      {
+        "id": 21,
+        "user_id": 2,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2026-01-14T16:24:43",
+        "updated_at": "2026-01-14T16:24:43"
+      }
+    ],
+    "3": [
+      {
+        "id": 31,
+        "user_id": 3,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2026-01-14T16:27:23",
+        "updated_at": "2026-01-14T16:27:23"
+      }
+    ],
+    "4": [
+      {
+        "id": 41,
+        "user_id": 4,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2026-01-14T16:29:54",
+        "updated_at": "2026-01-14T16:29:54"
+      }
+    ],
+    "5": [
+      {
+        "id": 51,
+        "user_id": 5,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2026-01-14T16:36:55",
+        "updated_at": "2026-01-14T16:36:55"
+      }
+    ],
+    "6": [
+      {
+        "id": 61,
+        "user_id": 6,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2026-01-14T16:51:35",
+        "updated_at": "2026-01-14T16:51:35"
+      }
+    ],
+    "7": [
+      {
+        "id": 71,
+        "user_id": 7,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2026-01-14T17:01:23",
+        "updated_at": "2026-01-14T17:01:23"
+      }
+    ],
+    "8": [
+      {
+        "id": 81,
+        "user_id": 8,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2026-01-14T17:04:23",
+        "updated_at": "2026-01-14T17:04:23"
+      }
+    ],
+    "9": [
+      {
+        "id": 91,
+        "user_id": 9,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2026-01-14T17:07:08",
+        "updated_at": "2026-01-14T17:07:08"
+      }
+    ]
+  },
+  "trades": {},
+  "next_id": 10
+}

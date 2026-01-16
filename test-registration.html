@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Test</title>
+</head>
+<body>
+    <h1>Registration Test</h1>
+    <form id="registrationForm">
+        <div>
+            <label>Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" id="password" required>
+        </div>
+        <div>
+            <label>Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                document.getElementById('result').innerHTML = '<p style="color: red;">Passwords do not match!</p>';
+                return;
+            }
+            
+            try {
+                const response = await fetch('http://localhost:5000/api/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        password: password
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    document.getElementById('result').innerHTML = '<p style="color: green;">Registration successful! User ID: ' + data.userId + '</p>';
+                    
+                    // Test login
+                    const loginResponse = await fetch('http://localhost:5000/api/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            email: email,
+                            password: password
+                        })
+                    });
+                    
+                    const loginData = await loginResponse.json();
+                    if (loginData.success) {
+                        document.getElementById('result').innerHTML += '<p style="color: green;">Login test successful!</p>';
+                    } else {
+                        document.getElementById('result').innerHTML += '<p style="color: red;">Login test failed: ' + loginData.error + '</p>';
+                    }
+                } else {
+                    document.getElementById('result').innerHTML = '<p style="color: red;">Registration failed: ' + data.error + '</p>';
+                }
+            } catch (error) {
+                document.getElementById('result').innerHTML = '<p style="color: red;">Error: ' + error.message + '</p>';
+            }
+        });
+    </script>
+</body>
+</html>

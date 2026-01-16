@@ -1,0 +1,193 @@
+{
+  "users": {
+    "1": {
+      "id": 1,
+      "email": "admin@example.com",
+      "name": "Admin User",
+      "role": "admin",
+      "password": "password",
+      "created_at": "2024-01-01T00:00:00",
+      "updated_at": "2024-01-01T00:00:00"
+    },
+    "2": {
+      "id": 2,
+      "email": "superadmin@example.com",
+      "name": "Super Admin User",
+      "role": "super_admin",
+      "password": "password",
+      "created_at": "2024-01-01T00:00:00",
+      "updated_at": "2024-01-01T00:00:00"
+    },
+    "3": {
+      "id": 3,
+      "email": "user@example.com",
+      "name": "Regular User",
+      "role": "user",
+      "password": "password",
+      "created_at": "2024-01-01T00:00:00",
+      "updated_at": "2024-01-01T00:00:00"
+    },
+    "8": {
+      "id": 8,
+      "email": "test@example.com",
+      "name": "Test User",
+      "role": "user",
+      "password": "testpass123",
+      "created_at": "2026-01-16T14:00:01",
+      "updated_at": "2026-01-16T14:00:01"
+    }
+  },
+  "challenges": {
+    "1": [
+      {
+        "id": 11,
+        "user_id": 1,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2024-01-01T00:00:00",
+        "updated_at": "2024-01-01T00:00:00"
+      }
+    ],
+    "2": [
+      {
+        "id": 21,
+        "user_id": 2,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2024-01-01T00:00:00",
+        "updated_at": "2024-01-01T00:00:00"
+      }
+    ],
+    "3": [
+      {
+        "id": 31,
+        "user_id": 3,
+        "initial_balance": 10000,
+        "current_balance": 10010,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2024-01-01T00:00:00",
+        "updated_at": "2026-01-16T13:46:29"
+      }
+    ],
+    "8": [
+      {
+        "id": 81,
+        "user_id": 8,
+        "initial_balance": 10000,
+        "current_balance": 10000,
+        "status": "active",
+        "max_daily_loss": 500,
+        "max_total_loss": 1000,
+        "profit_target": 1000,
+        "created_at": "2026-01-16T14:00:01",
+        "updated_at": "2026-01-16T14:00:01"
+      }
+    ]
+  },
+  "trades": {
+    "1768494992276": [
+      {
+        "id": 1,
+        "user_id": 1768494992276,
+        "challenge_id": 87,
+        "symbol": "TSLA",
+        "type": "BUY",
+        "price": 248.5,
+        "quantity": 0.1,
+        "timestamp": "2026-01-16T13:45:01",
+        "pnl": 0
+      },
+      {
+        "id": 2,
+        "user_id": 1768494992276,
+        "challenge_id": null,
+        "symbol": "AAPL",
+        "type": "BUY",
+        "price": 189.45,
+        "quantity": 0.1,
+        "timestamp": "2026-01-16T13:45:25",
+        "pnl": 0
+      }
+    ],
+    "3": [
+      {
+        "id": 3,
+        "user_id": 3,
+        "challenge_id": 31,
+        "symbol": "AAPL",
+        "type": "BUY",
+        "price": 189.45,
+        "quantity": 0.1,
+        "timestamp": "2026-01-16T13:46:29",
+        "pnl": 0
+      },
+      {
+        "id": 4,
+        "user_id": 3,
+        "challenge_id": null,
+        "symbol": "TSLA",
+        "type": "BUY",
+        "price": 248.5,
+        "quantity": 0.1,
+        "timestamp": "2026-01-16T13:47:11",
+        "pnl": 0
+      },
+      {
+        "id": 5,
+        "user_id": 3,
+        "challenge_id": null,
+        "symbol": "AAPL",
+        "type": "BUY",
+        "price": 189.45,
+        "quantity": 0.1,
+        "timestamp": "2026-01-16T13:47:20",
+        "pnl": 0
+      },
+      {
+        "id": 6,
+        "user_id": 3,
+        "challenge_id": null,
+        "symbol": "TSLA",
+        "type": "BUY",
+        "price": 248.5,
+        "quantity": 0.1,
+        "timestamp": "2026-01-16T13:59:04",
+        "pnl": 0
+      },
+      {
+        "id": 7,
+        "user_id": 3,
+        "challenge_id": null,
+        "symbol": "AAPL",
+        "type": "SELL",
+        "price": 189.45,
+        "quantity": 0.1,
+        "timestamp": "2026-01-16T13:59:25",
+        "pnl": 0
+      },
+      {
+        "id": 9,
+        "user_id": 3,
+        "challenge_id": 3,
+        "symbol": "TSLA",
+        "type": "BUY",
+        "price": 248.5,
+        "quantity": 0.1,
+        "timestamp": "2026-01-16T14:08:38",
+        "pnl": 0
+      }
+    ]
+  },
+  "next_id": 10
+}
