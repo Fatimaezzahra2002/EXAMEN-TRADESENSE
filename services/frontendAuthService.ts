@@ -1,6 +1,6 @@
 // Service d'authentification frontend qui communique avec le backend
 export class FrontendAuthService {
-  private static readonly BASE_URL = 'http://localhost:5000/api';
+  private static readonly BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
   // Fonction de login qui appelle le backend
   static async login(email: string, password: string): Promise<{ success: boolean; user?: any; error?: string }> {

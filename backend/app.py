@@ -255,9 +255,9 @@ def register():
             'userId': user_id
         })
         
-258→    except Exception as e:
-259→        print(f"Erreur d'inscription: {e}")
-260→        return jsonify({'success': False, 'error': 'Erreur serveur'}), 500
+    except Exception as e:
+        print(f"Erreur d'inscription: {e}")
+        return jsonify({'success': False, 'error': 'Erreur serveur'}), 500
 
 @app.route('/api/user/<int:user_id>/challenges', methods=['POST'])
 def create_challenge(user_id):
@@ -460,4 +460,6 @@ if __name__ == '__main__':
     # Initialiser les tables au démarrage
     initialize_tables()
     # Démarrer le serveur
-    app.run(debug=True, port=5000)
+    import os
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)

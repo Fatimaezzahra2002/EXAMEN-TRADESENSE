@@ -1,7 +1,7 @@
 import { ChallengeStatus } from '../types';
 
 export class UserDataService {
-  private static readonly BASE_URL = 'http://localhost:5000/api';
+  private static readonly BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
   // Fonction pour récupérer les défis d'un utilisateur depuis le backend
   static async getUserChallenges(userId: number): Promise<any[]> {
