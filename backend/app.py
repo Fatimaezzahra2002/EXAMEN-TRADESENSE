@@ -14,10 +14,10 @@ CORS(app)  # Autoriser les requêtes cross-origin
 
 # Configuration de la base de données
 DB_CONFIG = {
-    'host': 'localhost',
-    'database': 'examen',
-    'user': 'root',
-    'password': '123456'
+    'host': os.getenv('DB_HOST', 'localhost'),
+    'database': os.getenv('DB_NAME', 'examen'),
+    'user': os.getenv('DB_USER', 'root'),
+    'password': os.getenv('DB_PASSWORD', '123456')
 }
 
 def get_db_connection():
